@@ -1,0 +1,29 @@
+class Node
+{
+  int data;
+  Node next;
+  Node (int data)
+  {
+    this.data=data;
+  }
+}
+public class Main
+{
+  Node static head;
+  while(temp!=null)
+  {
+    System.out.println(temo.data+" ");
+    temp=temp.next;
+  }
+  public static void main(String args[])
+  {
+    Main obj=new Main();
+    Node n1=new Node(10);
+    obj.head=n1;
+    Node n2=new Node(20);
+    obj.next=n2;
+    Node n3=new Node(30);
+    n2.next=n3;
+    print();
+  }
+}
