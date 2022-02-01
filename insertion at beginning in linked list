@@ -1,0 +1,40 @@
+class Node
+{
+  int data;
+  Node next;
+  Node(int data)
+  {
+    this.data=data;
+  }
+}
+public class Main
+{
+  Node head;
+  public void print()
+  {
+    Node temp=head;
+    while(temp!=null)
+    {
+      System.out.println(temp.data+" ");
+      temp=temp.next;
+    }
+  }
+  public void insertAtBeg(in k)
+  {
+    Node n=new Node(k);
+    n.next=head;
+    head=n;
+  }
+  public static void main(String args[])
+  {
+    Main obj=new Main();
+    Node n1=new Node(10);
+    obj.head=n1;
+    Node n2=new Node(20);
+    obj.head=n2;
+    Node n3=new Node(30);
+    obj.head=n3;
+    obj.insertAtBeg(50);
+    obj.print();
+  }
+}
