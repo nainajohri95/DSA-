@@ -19,7 +19,7 @@ public class Main
       temp=temp.next;
     }
   }
-  public void insertAtBeg(in k)
+  public void insertAtBeg(int k)
   {
     Node n=new Node(k);
     n.next=head;
